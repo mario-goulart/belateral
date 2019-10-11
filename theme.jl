@@ -109,6 +109,14 @@
                  (cursor . left_ptr)
                  (class . title))
 
+                ;; bottom frame line
+                ((background . ,top-light)
+                 (left-edge . -4)
+                 (bottom-edge . -4)
+                 (right-edge . 0)
+                 (cursor . left_ptr)
+                 (class . title))
+
                 ;; Left frame line
                 ((background . ,left-light)
                  (top-edge . -1)
@@ -117,9 +125,17 @@
                  (cursor . left_ptr)
                  (class . title))
 
+                ;; Right frame line
+                ((background . ,left-light)
+                 (top-edge . -4)
+                 (bottom-edge . -4)
+                 (right-edge . -4)
+                 (cursor . left_ptr)
+                 (class . title))
+
                 ((background . ,bottom-left)
                  (left-edge . -4)
-                 (bottom-edge . -1)
+                 (bottom-edge . -4)
                  (cursor . left_ptr)
                  (class . title))
 
