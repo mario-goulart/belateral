@@ -57,11 +57,13 @@
             )))
        (draw-text
         (lambda (w)
-          (list
-           (make-text-image (window-name w) 4
-                            (get-color (car font-colors)) font)
-           (make-text-image (window-name w) 4
-                            (get-color (cadr font-colors)) font))))
+          (let* ((name% (window-name w))
+                 (name (if (equal name% "") "noname" name%)))
+            (list
+             (make-text-image name 4
+                              (get-color (car font-colors)) font)
+             (make-text-image name 4
+                              (get-color (cadr font-colors)) font)))))
 
        ;; --- Images
        (border         (make-image "border.png"))
