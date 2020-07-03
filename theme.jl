@@ -271,5 +271,5 @@
            ((shaped) shaped-frame)
            ((shaped-transient) shaped-transient-frame))))
 
-  (call-after-property-changed 'WM_NAME update-title-width)
+  (call-after-property-changed '(WM_NAME _NET_WM_NAME) update-title-width)
   )
