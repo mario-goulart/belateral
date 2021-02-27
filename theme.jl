@@ -81,6 +81,9 @@
        (top-left       (make-image "top-left.png"))
        (top-light      (make-image "top-light.png"))
        (top-right      (make-image "top-right.png"))
+       (corner-top-right (make-image "corner-top-right.png"))
+       (corner-bottom-right (make-image "corner-bottom-right.png"))
+       (corner-bottom-left (make-image "corner-bottom-left.png"))
 
        (frame `(
                 ;; Title background
@@ -146,6 +149,24 @@
                  (bottom-edge . -1)
                  (cursor . sizing)
                  (class . bottom-right-corner))
+
+                ((background . ,corner-top-right)
+                 (right-edge . -4)
+                 (top-edge . -4)
+                 (cursor . sizing)
+                 (class . top-right-corner))
+
+                ((background . ,corner-bottom-right)
+                 (right-edge . -4)
+                 (bottom-edge . -4)
+                 (cursor . sizing)
+                 (class . bottom-right-corner))
+
+                ((background . ,corner-bottom-left)
+                 (left-edge . -4)
+                 (bottom-edge . -4)
+                 (cursor . sizing)
+                 (class . bottom-left-corner))
                 ))
 
        (shaped-frame `(
