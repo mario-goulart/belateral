@@ -81,6 +81,7 @@
        (top-left       (make-image "top-left.png"))
        (top-light      (make-image "top-light.png"))
        (corner-top-right (make-image "corner-top-right.png"))
+       (corner-top-left (make-image "corner-top-left.png"))
        (corner-bottom-right (make-image "corner-bottom-right.png"))
        (corner-bottom-left (make-image "corner-bottom-left.png"))
 
@@ -104,10 +105,11 @@
                  (left-edge . -23)
                  (cursor . left_ptr)
                  (class . title))
+                ;; End title background
 
                 ;; Top frame line
                 ((background . ,top-light)
-                 (left-edge . -23) ;; 3 for borderless title
+                 (left-edge . -3) ;; 3 for borderless title
                  (top-edge . -4)
                  (right-edge . 0)
                  (cursor . left_ptr)
@@ -148,6 +150,12 @@
                  (bottom-edge . -1)
                  (cursor . sizing)
                  (class . bottom-right-corner))
+
+                ((background . ,corner-top-left)
+                 (left-edge . -4)
+                 (top-edge . -4)
+                 (cursor . sizing)
+                 (class . top-left-corner))
 
                 ((background . ,corner-top-right)
                  (right-edge . -4)
