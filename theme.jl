@@ -171,26 +171,26 @@
 
        (shaped-frame `(
                        ((background . ,title)
-                        (top-edge . 11)
-                        (left-edge . -28)
-                        (height . ,(lambda (w) (title-width w)))
+                        (top-edge . -4)
+                        (left-edge . -23)
+                        (height . ,(lambda (w) (+ (title-width w) 15)))
                         (cursor . left_ptr)
                         (class . title))
 
                        ((background . ,draw-text)
-                        (top-edge . 20)
-                        (left-edge . -23)
+                        (top-edge . 17)
+                        (left-edge . -19)
                         (cursor . left_ptr)
                         (class . title))
 
                        ((background . ,title-bottom)
                         (top-edge . ,(lambda (w) (+ (title-width w) 11)))
-                        (left-edge . -28)
+                        (left-edge . -23)
                         (cursor . left_ptr)
                         (class . title))
 
                        ((background . ,border)
-                        (top-edge . ,-9)
+                        (top-edge . -9)
                         (right-edge . 8)
                         (height . 4)
                         (cursor . left_ptr)
