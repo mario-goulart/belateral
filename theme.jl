@@ -80,7 +80,6 @@
        (title          (make-image "title.png"))
        (top-left       (make-image "top-left.png"))
        (top-light      (make-image "top-light.png"))
-       (top-right      (make-image "top-right.png"))
        (corner-top-right (make-image "corner-top-right.png"))
        (corner-bottom-right (make-image "corner-bottom-right.png"))
        (corner-bottom-left (make-image "corner-bottom-left.png"))
